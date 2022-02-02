@@ -436,8 +436,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 500,
-        "y": 120,
+        "x": 640,
+        "y": 160,
         "wires": []
     },
     {
@@ -492,6 +492,27 @@
         "payloadType": "bool",
         "x": 150,
         "y": 200,
+        "wires": [
+            [
+                "ad57eba42115132b"
+            ]
+        ]
+    },
+    {
+        "id": "f594782d2ef8cab1",
+        "type": "mqtt in",
+        "z": "20f4e78301403fbc",
+        "name": "",
+        "topic": "red_led",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "6753997140fbf9d0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 360,
         "wires": [
             [
                 "ad57eba42115132b"
