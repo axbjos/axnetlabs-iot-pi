@@ -1,1 +1,402 @@
-[]
+[
+    {
+        "id": "07bff9b5c8bd4643",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "379adc92c83a3b9f",
+        "type": "tab",
+        "label": "Temp Processor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d7632026aca46a5d",
+        "type": "tab",
+        "label": "Test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e021af12dfbf863a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6ae4e1a44342f2c5",
+        "type": "serial-port",
+        "serialport": "/dev/ttyS0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "f70f38d19acd4eca",
+        "type": "serial-port",
+        "serialport": "/dev/ttyAMA0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "34c5d364ab2fc9e1",
+        "type": "mqtt-broker",
+        "name": "ROG MQTT 1",
+        "broker": "10.43.2.19",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "43795aad712d9aae",
+        "type": "serial in",
+        "z": "379adc92c83a3b9f",
+        "name": "",
+        "serial": "6ae4e1a44342f2c5",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "96ef4bc2d9e46dfb",
+                "f4e7ce4f8e88be93"
+            ]
+        ]
+    },
+    {
+        "id": "71203e019a351d10",
+        "type": "debug",
+        "z": "379adc92c83a3b9f",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "495c4dcfef903c0b",
+        "type": "mqtt out",
+        "z": "379adc92c83a3b9f",
+        "name": "",
+        "topic": "joesdesk/temp",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "34c5d364ab2fc9e1",
+        "x": 760,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "96ef4bc2d9e46dfb",
+        "type": "switch",
+        "z": "379adc92c83a3b9f",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "lte",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "495c4dcfef903c0b",
+                "71203e019a351d10"
+            ],
+            [
+                "299eb71f57c394a6",
+                "38933612db327533"
+            ]
+        ]
+    },
+    {
+        "id": "299eb71f57c394a6",
+        "type": "mqtt out",
+        "z": "379adc92c83a3b9f",
+        "name": "",
+        "topic": "joesdesk/status",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "34c5d364ab2fc9e1",
+        "x": 760,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "38933612db327533",
+        "type": "debug",
+        "z": "379adc92c83a3b9f",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "f4e7ce4f8e88be93",
+        "type": "debug",
+        "z": "379adc92c83a3b9f",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6d42bc94e8d96f05",
+        "type": "mqtt in",
+        "z": "d7632026aca46a5d",
+        "name": "",
+        "topic": "joesdesk/temp",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "34c5d364ab2fc9e1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "7047c20e43e6e480"
+            ]
+        ]
+    },
+    {
+        "id": "7047c20e43e6e480",
+        "type": "debug",
+        "z": "d7632026aca46a5d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b27e953214a13981",
+        "type": "pimcp3008",
+        "z": "e021af12dfbf863a",
+        "name": "",
+        "dev": "3008",
+        "pin": 0,
+        "dnum": 0,
+        "bus": 0,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "79cac8321c245acc",
+                "35c10cbde36b3bf8"
+            ]
+        ]
+    },
+    {
+        "id": "b0aed69a6f7a726f",
+        "type": "inject",
+        "z": "e021af12dfbf863a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "b27e953214a13981"
+            ]
+        ]
+    },
+    {
+        "id": "556b36b7a57c5f65",
+        "type": "function",
+        "z": "e021af12dfbf863a",
+        "name": "Convert ADC Value to Voltage",
+        "func": "msg.payload.voltage = msg.payload.voltage * .0032258;\nmsg.payload.sensor = \"MCP3008\"\nmsg.payload.pin = 0\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 240,
+        "wires": [
+            [
+                "23a199af2a363f73"
+            ]
+        ]
+    },
+    {
+        "id": "79cac8321c245acc",
+        "type": "debug",
+        "z": "e021af12dfbf863a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "35c10cbde36b3bf8",
+        "type": "function",
+        "z": "e021af12dfbf863a",
+        "name": "Create JSON",
+        "func": "voltage = msg.payload;\n\nmsg.payload = '{\"voltage\":' + voltage + '}';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "348be992e42706bc"
+            ]
+        ]
+    },
+    {
+        "id": "23a199af2a363f73",
+        "type": "debug",
+        "z": "e021af12dfbf863a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "348be992e42706bc",
+        "type": "json",
+        "z": "e021af12dfbf863a",
+        "name": "Convert to JSON Object",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "556b36b7a57c5f65"
+            ]
+        ]
+    }
+]
