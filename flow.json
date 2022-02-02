@@ -297,14 +297,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "10",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 100,
+        "payload": "0",
+        "payloadType": "str",
+        "x": 90,
         "y": 100,
         "wires": [
             [
