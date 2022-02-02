@@ -24,6 +24,14 @@
         "env": []
     },
     {
+        "id": "20f4e78301403fbc",
+        "type": "tab",
+        "label": "LED Controller",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "6ae4e1a44342f2c5",
         "type": "serial-port",
         "serialport": "/dev/ttyS0",
@@ -416,5 +424,78 @@
         "x": 1100,
         "y": 380,
         "wires": []
+    },
+    {
+        "id": "ad57eba42115132b",
+        "type": "rpi-gpio out",
+        "z": "20f4e78301403fbc",
+        "name": "",
+        "pin": "21",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 500,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "80a9cdfac576e32d",
+        "type": "inject",
+        "z": "20f4e78301403fbc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "ad57eba42115132b"
+            ]
+        ]
+    },
+    {
+        "id": "8afa1fbabea2dea1",
+        "type": "inject",
+        "z": "20f4e78301403fbc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "ad57eba42115132b"
+            ]
+        ]
     }
 ]
