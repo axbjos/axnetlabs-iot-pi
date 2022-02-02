@@ -77,6 +77,32 @@
         "sessionExpiry": ""
     },
     {
+        "id": "6753997140fbf9d0",
+        "type": "mqtt-broker",
+        "name": "MBPM1 Broker",
+        "broker": "192.168.0.12",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
         "id": "43795aad712d9aae",
         "type": "serial in",
         "z": "379adc92c83a3b9f",
@@ -309,7 +335,8 @@
         "y": 240,
         "wires": [
             [
-                "23a199af2a363f73"
+                "23a199af2a363f73",
+                "fa95c7a57e4baab8"
             ]
         ]
     },
@@ -326,7 +353,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 750,
-        "y": 40,
+        "y": 100,
         "wires": []
     },
     {
@@ -360,8 +387,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1130,
-        "y": 300,
+        "x": 1110,
+        "y": 120,
         "wires": []
     },
     {
@@ -379,5 +406,23 @@
                 "556b36b7a57c5f65"
             ]
         ]
+    },
+    {
+        "id": "fa95c7a57e4baab8",
+        "type": "mqtt out",
+        "z": "e021af12dfbf863a",
+        "name": "",
+        "topic": "mcp3008",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6753997140fbf9d0",
+        "x": 1100,
+        "y": 380,
+        "wires": []
     }
 ]
