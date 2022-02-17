@@ -851,7 +851,8 @@
         "y": 820,
         "wires": [
             [
-                "3afd6f7beb325e1a"
+                "3afd6f7beb325e1a",
+                "6f477c3011b8bfe0"
             ]
         ]
     }
