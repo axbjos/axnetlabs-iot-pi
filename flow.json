@@ -719,7 +719,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{  \"level\" : 50}",
+        "payload": "{  \"level\" : 90}",
         "payloadType": "json",
         "x": 170,
         "y": 1360,
