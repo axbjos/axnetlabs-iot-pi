@@ -538,8 +538,8 @@
         "freq": "50",
         "out": "pwm",
         "bcm": true,
-        "x": 660,
-        "y": 780,
+        "x": 700,
+        "y": 700,
         "wires": []
     },
     {
@@ -644,7 +644,8 @@
             [
                 "425d785450d43e89",
                 "6f477c3011b8bfe0",
-                "4731da5d61a5f804"
+                "4731da5d61a5f804",
+                "5a720ea14e6352e3"
             ]
         ]
     },
@@ -655,8 +656,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 530,
-        "y": 960,
+        "x": 290,
+        "y": 980,
         "wires": []
     },
     {
@@ -773,7 +774,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
+        "x": 810,
         "y": 880,
         "wires": []
     },
@@ -883,6 +884,24 @@
         "wires": [
             [
                 "d0d5080c3d1ae1a1"
+            ]
+        ]
+    },
+    {
+        "id": "5a720ea14e6352e3",
+        "type": "file",
+        "z": "78256c05476f9031",
+        "name": "",
+        "filename": "current_status",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 540,
+        "y": 940,
+        "wires": [
+            [
+                "6f477c3011b8bfe0"
             ]
         ]
     }
