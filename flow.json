@@ -674,5 +674,70 @@
                 "425d785450d43e89"
             ]
         ]
+    },
+    {
+        "id": "ad29f658ffb26332",
+        "type": "http request",
+        "z": "78256c05476f9031",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "authType": "",
+        "senderr": false,
+        "x": 390,
+        "y": 1240,
+        "wires": [
+            [
+                "dc3291f06f2a2b94"
+            ]
+        ]
+    },
+    {
+        "id": "c15be21ed75f6bc1",
+        "type": "inject",
+        "z": "78256c05476f9031",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "50",
+        "payload": "",
+        "payloadType": "num",
+        "x": 150,
+        "y": 1240,
+        "wires": [
+            [
+                "ad29f658ffb26332"
+            ]
+        ]
+    },
+    {
+        "id": "dc3291f06f2a2b94",
+        "type": "debug",
+        "z": "78256c05476f9031",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1240,
+        "wires": []
     }
 ]
