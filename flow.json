@@ -532,7 +532,7 @@
         "type": "rpi-gpio out",
         "z": "78256c05476f9031",
         "name": "",
-        "pin": "21",
+        "pin": "20",
         "set": "",
         "level": "0",
         "freq": "50",
