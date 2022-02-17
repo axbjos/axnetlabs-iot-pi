@@ -855,5 +855,35 @@
                 "6f477c3011b8bfe0"
             ]
         ]
+    },
+    {
+        "id": "d494e2930fb9422d",
+        "type": "inject",
+        "z": "78256c05476f9031",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{  \"level\" : 10}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 1440,
+        "wires": [
+            [
+                "d0d5080c3d1ae1a1"
+            ]
+        ]
     }
 ]
