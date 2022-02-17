@@ -684,7 +684,7 @@
         "z": "78256c05476f9031",
         "name": "GET LED Status",
         "method": "GET",
-        "ret": "txt",
+        "ret": "obj",
         "paytoqs": "ignore",
         "url": "http://localhost:1880/led",
         "tls": "",
