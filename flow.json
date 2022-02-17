@@ -944,7 +944,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://10.1.128.121:1880/led",
+        "url": "http://10.1.128.121:5000/led",
         "tls": "",
         "persist": false,
         "proxy": "",
