@@ -719,9 +719,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "50",
-        "payloadType": "num",
-        "x": 150,
+        "payload": "{\"level\":50}",
+        "payloadType": "json",
+        "x": 160,
         "y": 1360,
         "wires": [
             [
