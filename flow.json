@@ -32,6 +32,14 @@
         "env": []
     },
     {
+        "id": "78256c05476f9031",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "6ae4e1a44342f2c5",
         "type": "serial-port",
         "serialport": "/dev/ttyS0",
@@ -516,6 +524,50 @@
         "wires": [
             [
                 "ad57eba42115132b"
+            ]
+        ]
+    },
+    {
+        "id": "3afd6f7beb325e1a",
+        "type": "rpi-gpio out",
+        "z": "78256c05476f9031",
+        "name": "",
+        "pin": "21",
+        "set": "",
+        "level": "0",
+        "freq": "50",
+        "out": "pwm",
+        "bcm": true,
+        "x": 520,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "16ac3d5695dcf6ad",
+        "type": "inject",
+        "z": "78256c05476f9031",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "3afd6f7beb325e1a"
             ]
         ]
     }
