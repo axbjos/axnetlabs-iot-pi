@@ -538,8 +538,8 @@
         "freq": "50",
         "out": "pwm",
         "bcm": true,
-        "x": 520,
-        "y": 620,
+        "x": 660,
+        "y": 780,
         "wires": []
     },
     {
@@ -626,6 +626,52 @@
         "wires": [
             [
                 "3afd6f7beb325e1a"
+            ]
+        ]
+    },
+    {
+        "id": "59eb443c4c3c20ad",
+        "type": "http in",
+        "z": "78256c05476f9031",
+        "name": "",
+        "url": "/led",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 880,
+        "wires": [
+            [
+                "3afd6f7beb325e1a",
+                "425d785450d43e89"
+            ]
+        ]
+    },
+    {
+        "id": "425d785450d43e89",
+        "type": "http response",
+        "z": "78256c05476f9031",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "a543e0ca80e44268",
+        "type": "http in",
+        "z": "78256c05476f9031",
+        "name": "",
+        "url": "/led",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 1080,
+        "wires": [
+            [
+                "425d785450d43e89"
             ]
         ]
     }
