@@ -561,9 +561,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
+        "payload": "50",
+        "payloadType": "num",
+        "x": 150,
         "y": 620,
         "wires": [
             [
