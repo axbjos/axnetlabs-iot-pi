@@ -570,5 +570,63 @@
                 "3afd6f7beb325e1a"
             ]
         ]
+    },
+    {
+        "id": "1cf45a5261fba950",
+        "type": "inject",
+        "z": "78256c05476f9031",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "3afd6f7beb325e1a"
+            ]
+        ]
+    },
+    {
+        "id": "21e1c5142418bd8b",
+        "type": "inject",
+        "z": "78256c05476f9031",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "3afd6f7beb325e1a"
+            ]
+        ]
     }
 ]
