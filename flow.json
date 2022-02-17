@@ -681,7 +681,7 @@
         "id": "ad29f658ffb26332",
         "type": "http request",
         "z": "78256c05476f9031",
-        "name": "",
+        "name": "GET LED Status",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
@@ -691,7 +691,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 390,
+        "x": 400,
         "y": 1240,
         "wires": [
             [
@@ -721,10 +721,10 @@
         "payload": "",
         "payloadType": "num",
         "x": 150,
-        "y": 1240,
+        "y": 1360,
         "wires": [
             [
-                "ad29f658ffb26332"
+                "d0d5080c3d1ae1a1"
             ]
         ]
     },
@@ -775,5 +775,56 @@
         "x": 590,
         "y": 860,
         "wires": []
+    },
+    {
+        "id": "2f2f080d833eacb3",
+        "type": "inject",
+        "z": "78256c05476f9031",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1240,
+        "wires": [
+            [
+                "ad29f658ffb26332"
+            ]
+        ]
+    },
+    {
+        "id": "d0d5080c3d1ae1a1",
+        "type": "http request",
+        "z": "78256c05476f9031",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 390,
+        "y": 1360,
+        "wires": [
+            [
+                "dc3291f06f2a2b94"
+            ]
+        ]
     }
 ]
