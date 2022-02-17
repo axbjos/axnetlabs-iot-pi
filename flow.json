@@ -916,12 +916,11 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 430,
+        "x": 370,
         "y": 1120,
         "wires": [
             [
-                "b4a7c9f6534854b7",
-                "5a93961b13ce5c0b"
+                "8fce38c0bde5abd5"
             ]
         ]
     },
@@ -932,8 +931,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 650,
-        "y": 1120,
+        "x": 730,
+        "y": 1160,
         "wires": []
     },
     {
@@ -1016,6 +1015,22 @@
         "wires": [
             [
                 "5a720ea14e6352e3"
+            ]
+        ]
+    },
+    {
+        "id": "8fce38c0bde5abd5",
+        "type": "json",
+        "z": "78256c05476f9031",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 550,
+        "y": 1140,
+        "wires": [
+            [
+                "5a93961b13ce5c0b"
             ]
         ]
     }
