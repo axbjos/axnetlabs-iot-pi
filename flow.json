@@ -813,7 +813,7 @@
         "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "",
+        "url": "http://localhost:1880/led",
         "tls": "",
         "persist": false,
         "proxy": "",
