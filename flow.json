@@ -710,14 +710,15 @@
             },
             {
                 "p": "topic",
-                "vt": "str"
+                "v": "50",
+                "vt": "num"
             }
         ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "50",
+        "topic": "",
         "payload": "",
         "payloadType": "num",
         "x": 150,
