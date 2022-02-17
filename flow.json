@@ -892,12 +892,12 @@
         "type": "file",
         "z": "78256c05476f9031",
         "name": "",
-        "filename": "current_status",
+        "filename": "current_state",
         "appendNewline": true,
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 540,
+        "x": 530,
         "y": 940,
         "wires": [
             [
