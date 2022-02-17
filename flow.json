@@ -935,5 +935,72 @@
         "x": 650,
         "y": 1120,
         "wires": []
+    },
+    {
+        "id": "27dbbdb52f0eda18",
+        "type": "http request",
+        "z": "78256c05476f9031",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://10.1.128.121:1880/led",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 390,
+        "y": 1580,
+        "wires": [
+            [
+                "98ac888d587e493e"
+            ]
+        ]
+    },
+    {
+        "id": "e848560f20ec35ce",
+        "type": "inject",
+        "z": "78256c05476f9031",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 1580,
+        "wires": [
+            [
+                "27dbbdb52f0eda18"
+            ]
+        ]
+    },
+    {
+        "id": "98ac888d587e493e",
+        "type": "debug",
+        "z": "78256c05476f9031",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 1580,
+        "wires": []
     }
 ]
