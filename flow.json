@@ -645,7 +645,7 @@
                 "425d785450d43e89",
                 "6f477c3011b8bfe0",
                 "4731da5d61a5f804",
-                "5a720ea14e6352e3"
+                "a302973c5458caa9"
             ]
         ]
     },
@@ -767,7 +767,7 @@
         "type": "debug",
         "z": "78256c05476f9031",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -897,7 +897,7 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 530,
+        "x": 590,
         "y": 940,
         "wires": [
             [
@@ -1002,5 +1002,21 @@
         "x": 670,
         "y": 1580,
         "wires": []
+    },
+    {
+        "id": "a302973c5458caa9",
+        "type": "json",
+        "z": "78256c05476f9031",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 370,
+        "y": 920,
+        "wires": [
+            [
+                "5a720ea14e6352e3"
+            ]
+        ]
     }
 ]
