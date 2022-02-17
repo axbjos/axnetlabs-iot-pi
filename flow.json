@@ -893,7 +893,7 @@
         "z": "78256c05476f9031",
         "name": "",
         "filename": "current_state",
-        "appendNewline": true,
+        "appendNewline": false,
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
@@ -1030,8 +1030,7 @@
         "y": 1140,
         "wires": [
             [
-                "5a93961b13ce5c0b",
-                "b4a7c9f6534854b7"
+                "5a93961b13ce5c0b"
             ]
         ]
     }
