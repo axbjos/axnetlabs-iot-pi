@@ -571,7 +571,7 @@
         "format": "handlebars",
         "syntax": "mustache",
         "template": "{\"button\": 1,\n\"status\" : {{payload}}\n}",
-        "output": "str",
+        "output": "json",
         "x": 380,
         "y": 640,
         "wires": [
