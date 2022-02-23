@@ -288,7 +288,7 @@
         "name": "",
         "splt": ",",
         "spltType": "str",
-        "arraySplt": "",
+        "arraySplt": "1",
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
