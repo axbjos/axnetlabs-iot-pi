@@ -548,11 +548,11 @@
         "z": "20f4e78301403fbc",
         "name": "",
         "pin": "12",
-        "intype": "tri",
+        "intype": "up",
         "debounce": "25",
-        "read": true,
+        "read": false,
         "bcm": true,
-        "x": 130,
+        "x": 140,
         "y": 540,
         "wires": [
             [
