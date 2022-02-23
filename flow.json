@@ -10,7 +10,7 @@
     {
         "id": "379adc92c83a3b9f",
         "type": "tab",
-        "label": "Temp Serial",
+        "label": "Arduino Temp Serial",
         "disabled": false,
         "info": "",
         "env": []
@@ -183,7 +183,7 @@
         "type": "mqtt out",
         "z": "379adc92c83a3b9f",
         "name": "",
-        "topic": "arduino/temp",
+        "topic": "desktop/arduino_uno/temperature",
         "qos": "",
         "retain": "",
         "respTopic": "",
@@ -192,7 +192,7 @@
         "correl": "",
         "expiry": "",
         "broker": "6753997140fbf9d0",
-        "x": 760,
+        "x": 820,
         "y": 280,
         "wires": []
     },
@@ -236,7 +236,7 @@
         "type": "mqtt out",
         "z": "379adc92c83a3b9f",
         "name": "",
-        "topic": "arduino/status",
+        "topic": "desktop/arduino_uno/status",
         "qos": "",
         "retain": "",
         "respTopic": "",
@@ -245,7 +245,7 @@
         "correl": "",
         "expiry": "",
         "broker": "6753997140fbf9d0",
-        "x": 760,
+        "x": 800,
         "y": 360,
         "wires": []
     },
@@ -270,7 +270,7 @@
         "type": "debug",
         "z": "379adc92c83a3b9f",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
