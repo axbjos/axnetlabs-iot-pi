@@ -288,10 +288,10 @@
         "name": "",
         "splt": ",",
         "spltType": "str",
-        "arraySplt": "1",
+        "arraySplt": "0",
         "arraySpltType": "len",
         "stream": false,
-        "addname": "payload.temperature",
+        "addname": "",
         "x": 270,
         "y": 300,
         "wires": [
