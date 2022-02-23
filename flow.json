@@ -167,7 +167,7 @@
         "type": "debug",
         "z": "379adc92c83a3b9f",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -295,7 +295,9 @@
         "x": 250,
         "y": 220,
         "wires": [
-            []
+            [
+                "71203e019a351d10"
+            ]
         ]
     },
     {
