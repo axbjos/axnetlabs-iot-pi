@@ -157,8 +157,8 @@
         "y": 160,
         "wires": [
             [
-                "96ef4bc2d9e46dfb",
-                "f4e7ce4f8e88be93"
+                "f4e7ce4f8e88be93",
+                "98d64f0683747ad8"
             ]
         ]
     },
@@ -280,6 +280,23 @@
         "x": 440,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "98d64f0683747ad8",
+        "type": "split",
+        "z": "379adc92c83a3b9f",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 250,
+        "y": 220,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "b27e953214a13981",
