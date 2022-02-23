@@ -634,11 +634,11 @@
         "type": "http in",
         "z": "78256c05476f9031",
         "name": "",
-        "url": "/led",
+        "url": "/pwm_led",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
+        "x": 180,
         "y": 880,
         "wires": [
             [
@@ -656,8 +656,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 330,
-        "y": 960,
+        "x": 370,
+        "y": 980,
         "wires": []
     },
     {
@@ -665,11 +665,11 @@
         "type": "http in",
         "z": "78256c05476f9031",
         "name": "",
-        "url": "/led",
+        "url": "/pwm_led",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 180,
+        "x": 200,
         "y": 1080,
         "wires": [
             [
@@ -758,7 +758,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
+        "x": 790,
         "y": 1080,
         "wires": []
     },
@@ -931,8 +931,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 730,
-        "y": 1160,
+        "x": 770,
+        "y": 1140,
         "wires": []
     },
     {
@@ -959,8 +959,8 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 550,
-        "y": 1140,
+        "x": 530,
+        "y": 1120,
         "wires": [
             [
                 "5a93961b13ce5c0b",
