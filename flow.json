@@ -538,8 +538,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 640,
-        "y": 460,
+        "x": 700,
+        "y": 540,
         "wires": []
     },
     {
@@ -552,8 +552,8 @@
         "debounce": "25",
         "read": true,
         "bcm": true,
-        "x": 170,
-        "y": 620,
+        "x": 130,
+        "y": 540,
         "wires": [
             [
                 "bedbf83fd86dda3a"
@@ -571,9 +571,9 @@
                 "p": "payload",
                 "pt": "msg",
                 "from": "1",
-                "fromt": "str",
+                "fromt": "num",
                 "to": "0",
-                "tot": "str"
+                "tot": "num"
             }
         ],
         "action": "",
