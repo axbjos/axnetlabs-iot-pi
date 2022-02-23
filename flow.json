@@ -548,7 +548,7 @@
         "z": "20f4e78301403fbc",
         "name": "",
         "pin": "12",
-        "intype": "down",
+        "intype": "up",
         "debounce": "25",
         "read": false,
         "bcm": true,
