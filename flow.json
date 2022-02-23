@@ -1034,5 +1034,34 @@
                 "b4a7c9f6534854b7"
             ]
         ]
+    },
+    {
+        "id": "793262567f355967",
+        "type": "inject",
+        "z": "78256c05476f9031",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "25",
+        "payloadType": "num",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "3afd6f7beb325e1a"
+            ]
+        ]
     }
 ]
