@@ -576,7 +576,8 @@
         "y": 640,
         "wires": [
             [
-                "6b23addb43f3733a"
+                "6b23addb43f3733a",
+                "53eb4dfadaf02551"
             ]
         ]
     },
@@ -594,6 +595,24 @@
         "statusType": "auto",
         "x": 650,
         "y": 640,
+        "wires": []
+    },
+    {
+        "id": "53eb4dfadaf02551",
+        "type": "mqtt out",
+        "z": "20f4e78301403fbc",
+        "name": "",
+        "topic": "button_status",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6753997140fbf9d0",
+        "x": 700,
+        "y": 760,
         "wires": []
     },
     {
