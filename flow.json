@@ -574,15 +574,6 @@
                 "fromt": "str",
                 "to": "0",
                 "tot": "str"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "0",
-                "fromt": "str",
-                "to": "1",
-                "tot": "str"
             }
         ],
         "action": "",
@@ -590,7 +581,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 400,
         "y": 540,
         "wires": [
             [
