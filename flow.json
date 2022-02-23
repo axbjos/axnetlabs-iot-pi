@@ -556,9 +556,45 @@
         "y": 540,
         "wires": [
             [
-                "6ba3c937c388b968"
+                "6ba3c937c388b968",
+                "0fde2c80e3ab24ce"
             ]
         ]
+    },
+    {
+        "id": "0fde2c80e3ab24ce",
+        "type": "template",
+        "z": "20f4e78301403fbc",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"button\": 1,\n\"status\" : {{payload}}\n}",
+        "output": "str",
+        "x": 380,
+        "y": 640,
+        "wires": [
+            [
+                "6b23addb43f3733a"
+            ]
+        ]
+    },
+    {
+        "id": "6b23addb43f3733a",
+        "type": "debug",
+        "z": "20f4e78301403fbc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 640,
+        "wires": []
     },
     {
         "id": "3afd6f7beb325e1a",
