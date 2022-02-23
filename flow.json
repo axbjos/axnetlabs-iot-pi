@@ -550,7 +550,7 @@
         "pin": "12",
         "intype": "tri",
         "debounce": "25",
-        "read": false,
+        "read": true,
         "bcm": true,
         "x": 170,
         "y": 620,
