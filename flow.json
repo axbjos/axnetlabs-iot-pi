@@ -473,7 +473,8 @@
         "y": 120,
         "wires": [
             [
-                "ad57eba42115132b"
+                "ad57eba42115132b",
+                "6ba3c937c388b968"
             ]
         ]
     },
@@ -502,7 +503,8 @@
         "y": 200,
         "wires": [
             [
-                "ad57eba42115132b"
+                "ad57eba42115132b",
+                "6ba3c937c388b968"
             ]
         ]
     },
@@ -526,6 +528,21 @@
                 "ad57eba42115132b"
             ]
         ]
+    },
+    {
+        "id": "6ba3c937c388b968",
+        "type": "rpi-gpio out",
+        "z": "20f4e78301403fbc",
+        "name": "",
+        "pin": "16",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 640,
+        "y": 460,
+        "wires": []
     },
     {
         "id": "3afd6f7beb325e1a",
@@ -669,7 +686,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 200,
+        "x": 180,
         "y": 1080,
         "wires": [
             [
