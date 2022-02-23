@@ -291,7 +291,7 @@
         "arraySplt": "1",
         "arraySpltType": "len",
         "stream": false,
-        "addname": "",
+        "addname": "payload.temperature",
         "x": 270,
         "y": 300,
         "wires": [
