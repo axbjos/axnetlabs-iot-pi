@@ -1,9 +1,8 @@
-desktop_iot_pi
+Desktop IoT Node Red
 ==============
 
-Code for the Pi on my "desktop setup"
+Code for the Raspberry Pi side of my "desktop setup"
 
 ### About
 
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
+Joe Axberg & Associates, LLC
